@@ -5,7 +5,7 @@ from googletrans import Translator
 
 def traduzir(advice):
     translator = Translator()
-    adviceTraduzido = translator.translate(advice, src='en',dest='ar').text
+    adviceTraduzido = translator.translate(advice, src='en',dest='pt').text
     return adviceTraduzido
     
 app = Flask(__name__)
