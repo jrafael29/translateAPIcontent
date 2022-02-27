@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Traduzindo advice com Python</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: auto;
+            margin-top: 20px;
+            height: 300px;
+            width: 400px;
+            box-shadow: 0px 0px 10px #111;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .advice{
+            text-align: center;
+        }
+        .btn{
+            width: 120px;
+            height: 35px;
+            background: transparent;
+            border: 1px solid #111;
+            border-radius: 3px;
+        }
+        .btn:hover{
+            opacity: .8;
+            background-color: #f8f8f8;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h5>ID:{{id}}</h5>
+        Advice:
+        <h4 class="advice"> {{advice}} </h4>
+        <button class="btn" onclick="r()">Atualizar</button>
+    </div>
+    
+
+    <script>
+        function r(){
+            window.location.reload()
+        }
+    </script>
+</body>
+</html>
